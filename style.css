@@ -2,19 +2,18 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
   }
 
-  p {
+  p, b {
     margin: 0;
+    font-size: 18px;
   }
 
   ul {
     list-style-type: none;
     margin-top: 30px;
     padding: 0;
-    display: flex;
     gap: 20px;
   }
   
@@ -35,7 +34,6 @@ body {
   header {
     height: 72px;
     color: white;
-    display: flex;
     align-items: center;
     gap: 10px;
     justify-content: space-between;
@@ -47,13 +45,8 @@ body {
     color: white;
     margin: 100px 400px;
     border-radius: 10px;
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
-  }
-
-  .small-text {
-    font-size: 18px !important;
   }
 
   .medium-text {
@@ -62,6 +55,8 @@ body {
 
   .large-text {
     font-size: 36px !important;
+    font-style: italic;
+    font-weight: lighter;
   }
 
   .xlarge-text {
@@ -71,10 +66,6 @@ body {
   .bold {
     font-weight: 900;
   }
-
-  .title {
-    font-weight: 900;
-  }
   
   header, .section-1 {
     background: #240046;
@@ -82,12 +73,11 @@ body {
 
   .section-1 {
     color: white;
-    display: flex;
     justify-content: space-between;
+    padding: 100px 400px;
   }
 
   .section-2 {
-    display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -95,8 +85,12 @@ body {
   }
 
   .hobbies {
-    display: flex;
     justify-content: center;
+    gap: 32px;
+  }
+
+  .hobby {
+    max-width: 200px;
   }
 
   .section-2 img {
@@ -107,10 +101,10 @@ body {
   }
 
   .section-3 {
-    display: flex;
     text-align: center;
     background-color: #E5E7EB;
     flex-direction: column;
+    gap: 8px;
   }
 
   .author {
@@ -119,13 +113,6 @@ body {
 
   .section-2, .section-3 {
     color: #2d1f37;
-  }
-
-  .section-1{
-    padding: 100px 400px;
-  }
-
-  .section-2, .section-3 {
     padding: 100px 500px;
   }
 
@@ -134,7 +121,6 @@ body {
   }
 
   .text-area {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
@@ -144,7 +130,6 @@ body {
     border-radius: 10px;
     font-size: 18px;
     padding: 8px 32px;
-    background-color: #9D4EDD;
     width: fit-content;
   }
 
@@ -152,15 +137,10 @@ body {
     border: 3px solid white;
   }
 
-  footer, .btn-footer, button {
+  footer, .btn, .btn-footer, button {
     background: #9D4EDD;
   }
 
-  .hobby {
-    max-width: 200px;
-  }
-
-  .hobbies {
+  footer, .section-1, .section-2, .section-3, .text-area, .hobbies, header, ul, body {
     display: flex;
-    gap: 32px;
   }
